@@ -2179,7 +2179,7 @@ progress {
   --ct-table-active-bg: rgba(var(--ct-tertiary-bg-rgb), 1);
   --ct-table-hover-color: var(--ct-body-color);
   --ct-table-hover-bg: rgba(var(--ct-tertiary-bg-rgb), 1);
-  width: 100%;
+  width: 50%;
   margin-bottom: 1.5rem;
   vertical-align: top;
   border-color: var(--ct-table-border-color);
@@ -3528,12 +3528,13 @@ fieldset:disabled .btn {
   --ct-btn-disabled-border-color: #727cf5;
 }
 .btn-secondary {
+  padding: 19px 35px;
   --ct-btn-color: #fff;
-  --ct-btn-bg: #6c757d;
-  --ct-btn-border-color: #6c757d;
+  --ct-btn-bg: #c44a48;
+  --ct-btn-border-color:  #c44a48;
   --ct-btn-hover-color: #fff;
-  --ct-btn-hover-bg: #646c74;
-  --ct-btn-hover-border-color: #646c74;
+  --ct-btn-hover-bg: #f59494;
+  --ct-btn-hover-border-color:  #f59494;
   --ct-btn-focus-shadow-rgb: 130, 138, 145;
   --ct-btn-active-color: #fff;
   --ct-btn-active-bg: #646c74;
@@ -3559,6 +3560,48 @@ fieldset:disabled .btn {
   --ct-btn-disabled-bg: #0acf97;
   --ct-btn-disabled-border-color: #0acf97;
 }
+
+/* inventory items from the POS*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right side */
+  align-items: flex-start; /* Align content to the top */
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 columns of equal width */
+  gap: 20px; /* Gap between grid items */
+  padding: 20px; /* Padding around the grid */
+  margin-top: 10px; /* Add margin from the top */
+  margin-right: 20px; /* Add margin from the right */
+}
+
+.product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px; /* Adjust padding as needed */
+  font-size: 24px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-button:hover {
+  background-color: #45a049;
+}
+/* end of inventory items*/
+
 .btn-info {
   --ct-btn-color: #fff;
   --ct-btn-bg: #39afd1;
@@ -3590,6 +3633,24 @@ fieldset:disabled .btn {
   --ct-btn-disabled-color: #fff;
   --ct-btn-disabled-bg: #ffc35a;
   --ct-btn-disabled-border-color: #ffc35a;
+}
+.btn-receipt {
+
+  background-color: rgb(55, 50, 32);
+  padding: 9px 35px;
+  --ct-btn-hover-color: #fff;
+  --ct-btn-hover-bg: #646c74;
+  --ct-btn-hover-border-color: #646c74;
+  --ct-btn-focus-shadow-rgb: 130, 138, 145;
+  --ct-btn-active-color: #fff;
+}
+.btn-drawer {
+  background-color: rgb(42, 137, 185);
+  --ct-btn-hover-color: #fff;
+  --ct-btn-hover-bg:   rgb(35, 101, 136);
+  --ct-btn-hover-border-color:  rgb(35, 101, 136);
+  --ct-btn-focus-shadow-rgb: 130, 138, 145;
+  --ct-btn-active-color: #fff;
 }
 .btn-danger {
   --ct-btn-color: #fff;

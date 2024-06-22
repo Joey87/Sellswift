@@ -456,14 +456,14 @@
       </table>
 
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-">
           <div class="card card-body">
 
-            <p class="card-text">
+            <!--<p class="card-text">
               RUHMTECH SYSTEMS
             </p>
           </div>
-          <!-- end card-->
+          <-- end card-->
         </div>
         <!-- end col-->
         <div class="col-sm-6">
@@ -486,6 +486,21 @@
         </div>
         <!-- end col-->
       </div>
+
+      <!--inventory table starts-->
+      <div class="grid-container">
+        <!-- Generate 4 product buttons using a loop -->
+        <!-- Replace '#' with actual product URLs or actions -->
+        <!-- For simplicity, we'll manually create 4 buttons here -->
+        <a href="#" class="product-button">Product 1</a>
+        <a href="#" class="product-button">Product 2</a>
+        <a href="#" class="product-button">Product 3</a>
+        <a href="#" class="product-button">Product 4</a>
+        <a href="#" class="product-button">Product 5</a>
+        <a href="#" class="product-button">Product 6</a>
+    </div>
+
+      <!--inventory tabe ends-->
 
       <!-- Checkout Modal -->
       <!-- Checkout Modal -->
@@ -599,8 +614,17 @@
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                 Close
               </button>
+
+              <button type="button" class="btn btn-receipt" id="printReceipt">
+                <font color="#fff"> Print <br> Receipt</font>
+               </button>
+
+              <button type="button" class="btn btn-drawer" id="cashDrawer">
+                <font color=#fff> Open</br> Cash Drawer</color>
+              </button>
+              
               <button type="button" class="btn btn-warning" id="completeCheckout">
-                Complete Checkout
+                Complete </br>Checkout
               </button>
             </div>
           </div>
